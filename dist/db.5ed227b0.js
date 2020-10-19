@@ -20591,7 +20591,7 @@ var db = new sqlite3.Database('./db.sqlite', sqlite3.OPEN_READWRITE, function (e
   console.log('Connected to the database.');
 });
 db.serialize(function () {
-  db.each("SELECT *\n           FROM hello_world", function (err, row) {
+  db.each("SELECT id as id, text as text \n           FROM hello_world", function (err, row) {
     if (err) {
       console.error(err.message);
     }
@@ -20634,7 +20634,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37683" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34483" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

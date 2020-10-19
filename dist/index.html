@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <title>Using Parcel with OpenLayers</title>
     <style>#map {
         width: 100%;
@@ -14,6 +16,22 @@
     <script src="/ol.55037386.js"></script>
 
     <h2>Good news everyone!</h2>
+    
+    <div id="app0">
+        {{ data }}
+    </div>
+    
+    <script>var data = {
+  a: 1
+}; // The object is added to a Vue instance
+
+var vm = new Vue({
+  el: '#app0',
+  data: {
+    data: data
+  }
+});</script>
+    <!--
     <div id="app">
       {{ message }}
     </div>
@@ -37,7 +55,8 @@
       </ol>
     </div>
         
-    <script src="/vue.2e0aa7af.js"></script>
+    <script src="./vue.js"></script>
+    -->
     <script src="/db.5ed227b0.js"></script>
   </body>
 </html>
