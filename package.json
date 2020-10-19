@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/mightyMarabu/singlePageApp#readme",
   "dependencies": {
+    "node-gyp": "^3.8.0",
     "ol": "^6.4.3",
     "sqlite": "^4.0.15",
+    "sqlite3": "^5.0.0",
     "vue": "^2.6.12"
   },
   "devDependencies": {
