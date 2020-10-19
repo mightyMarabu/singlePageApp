@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>Using Parcel with OpenLayers</title>
     <style>
       #map {
@@ -12,6 +13,33 @@
   </head>
   <body>
     <div id="map"></div>
-    <script src="./index.js"></script>
+    <script src="./ol.js"></script>
+
+    <h2>Good news everyone!</h2>
+    <div id="app">
+      {{ message }}
+    </div>
+    
+    <div id="app-2">
+        <span v-bind:title="message">
+          Hover your mouse over me for a few seconds
+          to see my dynamically bound title!
+        </span>
+    </div>
+
+    <div id="app-3">
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <div id="app-4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+        
+    <script src="./vue.js"></script>
+    
   </body>
 </html>
