@@ -31,3 +31,8 @@ const app4 = new Vue({
     ]
   }
 })
+ const app5 = new Vue({
+    render (h) {
+    return h('div', this.hi)
+  }
+})

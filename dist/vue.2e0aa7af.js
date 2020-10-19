@@ -8579,6 +8579,11 @@ var app4 = new _vue.default({
     }]
   }
 });
+var app5 = new _vue.default({
+  render: function render(h) {
+    return h('div', this.hi);
+  }
+});
 },{"vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

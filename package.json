@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mightyMarabu/singlePageApp#readme",
   "dependencies": {
     "ol": "^6.4.3",
+    "sqlite": "^4.0.15",
     "vue": "^2.6.12"
   },
   "devDependencies": {
