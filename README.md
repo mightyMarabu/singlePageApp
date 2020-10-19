@@ -1,11 +1,13 @@
 # singlePageApp
 ## learning something
 ### init project
-create app folder
+* create app folder
 ```npm init```
-install packages
+* install packages
 ```npm install <package>```
+
 ```npm install --save-dev parcel-bundler```
 ### start app
+
 ```npm start```
 
