@@ -19,11 +19,12 @@
   },
   "homepage": "https://github.com/mightyMarabu/singlePageApp#readme",
   "dependencies": {
+    "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "md5": "^2.3.0",
     "node-gyp": "^3.8.0",
     "ol": "^6.4.3",
-    "sqlite": "^4.0.15",
-    "sqlite3": "^5.0.0",
-    "vue": "^2.6.12"
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"

@@ -2,10 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <title>Using Parcel with OpenLayers</title>
+    
+    <title>SinglePageApp</title>
     <style>
       #map {
         width: 100%;
@@ -13,50 +11,31 @@
       }
     </style>
   </head>
+
   <body>
-    <div id="map"></div>
-    <script src="./ol.js"></script>
-
+    <!-- <script type="text/javascript" src="db.js"></script> -->
+    <!-- <div id="map"></div>
+    <script type="text/javascript" src="./ol.js"></script> -->
+    
     <h2>Good news everyone!</h2>
-    
-    <div id="app0">
-        {{ data }}
-    </div>
-    
+    <button onclick="getStuff()">clickMe & show me something!</button>
     <script>
-        var data = { a: 1 }
-        // The object is added to a Vue instance
-        var vm = new Vue({
-            el: '#app0',
-            data: { data }
-        })
+      // var $ = require("jquery");
+       "use strict"
+                            function getStuff() {
+                                let url = "/api/users"
+                                    fetch(url)
+                                    .then((response)=>response.json())
+                                    .then((data) =>{
+                                        console.log(data)
+                                      }
+                                    )
+                                confirm("data loaded");
+                                // location.reload();
+                                };   
+                            
+
     </script>
-    <!--
-    <div id="app">
-      {{ message }}
-    </div>
     
-    <div id="app-2">
-        <span v-bind:title="message">
-          Hover your mouse over me for a few seconds
-          to see my dynamically bound title!
-        </span>
-    </div>
-
-    <div id="app-3">
-        <span v-if="seen">Now you see me</span>
-    </div>
-
-    <div id="app-4">
-      <ol>
-        <li v-for="todo in todos">
-          {{ todo.text }}
-        </li>
-      </ol>
-    </div>
-        
-    <script src="./vue.js"></script>
-    -->
-    <script src="./db.js"></script>
   </body>
 </html>
