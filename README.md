@@ -11,3 +11,8 @@
 
 ```npm start```
 
+or 
+
+```
+node index.js
+```

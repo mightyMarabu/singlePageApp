@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
-var db = require("./js/database.js")
+var db = require("./static/js/database.js")
 
 
 const PORT = process.env.PORT || 3000;
+
+app.use('/static', express.static('static'));
 
 app.get("/", (req, res) => {
   try {
