@@ -12,17 +12,22 @@
     <!-- <div id="map"></div>
     <script type="text/javascript" src="./ol.js"></script> -->
     
-    <h2>Good news everyone!</h2>
-    <button onclick="getStuff()">clickMe & show me something!</button>
-
-    <div class="game">
-        <div id="bike"></div>
-        <div id="obs"></div>
+    
+    <div class="world">
+      <h2>Good news everyone!</h2>
+    
+      <button onclick="getStuff()">clickMe & show me something!</button>  
+        <div id = "score" class="score" data-score>0</div>
+        <div class="start-screen" data-start-screen><h6>Get it on, Baby!</h6></div>
+        <div class="game">
+            <div id="bike"></div>
+            <div id="obs"></div>
+        </div>
     </div>
     <script>
        "use strict"
                             function getStuff() {
-                                let url = "/api/users"
+                                let url = "/api/score"
                                     fetch(url)
                                     .then((response)=>response.json())
                                     .then((data) =>{
@@ -35,6 +40,6 @@
                             
 
     </script>
-    <script src="static/js/scripts.js"></script>
+    <script src="static/js/scripts.js" type="module"></script>
   </body>
 </html>

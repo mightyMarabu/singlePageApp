@@ -1,9 +1,8 @@
 const sqlite3 = require('sqlite3').verbose();
 
-
 function getStuff(){
   // open the database
-  let db = new sqlite3.Database('./db.sqlite', sqlite3.OPEN_READWRITE, (err) => {
+  let db = new sqlite3.Database('./highscore.db', sqlite3.OPEN_READWRITE, (err) => {
     if (err) {
       console.error(err.message);
     }
@@ -11,8 +10,8 @@ function getStuff(){
   });
 
   db.all(() => {
-    db.each(`SELECT id, text 
-            FROM hello_world`, (err, row) => {
+    db.each(`SELECT name, score 
+            FROM score`, (err, row) => {
       if (err) {
         console.error(err.message);
       }
@@ -27,4 +26,9 @@ function getStuff(){
     console.log('Close the database connection.');
   })
 };
- getStuff();
+getStuff();
+
+function saveStuff(){
+  
+
+}
